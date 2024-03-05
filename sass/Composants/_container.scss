@@ -1,0 +1,78 @@
+.container {
+
+
+    .icon {
+        position: absolute;
+        top: 183px;
+        left: 262px;
+        width: 27px;
+        height: 20px;
+        @media #{$mini-up} {
+
+            top: 178px;
+
+        }
+
+        @media #{$medium-up} {
+
+            top: 227px;
+
+        }
+
+
+        @media #{$large-up} {
+
+            left: 193px;
+
+        }
+
+        @media #{$max-up} {
+            top: 237px;
+            left: 364px;
+
+
+        }
+
+    }
+
+    .icon--pages {
+
+        position: initial;
+
+
+
+
+    }
+
+    .icon path {
+        fill: transparent;
+        stroke-width: 15;
+        stroke: $minegray-color;
+    }
+
+
+}
+
+
+
+.icon.heart:hover path {
+    -webkit-animation: animate-iconheart 0.1s linear forwards;
+    animation: animate-iconheart 0.1s linear forwards;
+    stroke-opacity: 0;
+
+    @keyframes animate-iconheart {
+        0% {
+            fill: transparent;
+
+
+
+        }
+
+
+        100% {
+
+            fill: url(#gradient);
+
+        }
+    }
+}

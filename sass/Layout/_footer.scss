@@ -1,0 +1,160 @@
+/* Footer*/
+.footer {
+    background-color: $minegray-color ;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+   line-height: 22px;
+
+    @media #{$medium-down} {
+        @include flex(column, baseline, normal, nowrap);
+
+    }
+
+    @media #{$medium-up} {
+        @include flex(column, stretch, center, nowrap);
+        padding-top: 38px;
+       
+
+
+
+    }
+    @media #{$max-up}{
+  padding-right:190px ;
+  justify-content: space-between;
+    }
+
+
+
+
+
+
+    &__title {
+        font-family: "shrikhand", cursive;
+        font-size: $font-size-med;
+        color: white;
+        padding-left: 27px;
+
+        @media #{$medium-up} {
+            font-size: $font-size-max;
+            padding-left: 20px;
+            padding-bottom: 20px;
+        }
+        @media #{$max-up} {
+            font-size: $font-size-max;
+            padding-left: 27px;
+           
+          
+        }
+        
+
+
+
+    }
+
+    &__content {
+
+        padding-top: 26px;
+
+        @include flex(column, baseline, normal, nowrap);
+
+
+
+
+        @media #{$medium-up} {
+            display: flex;
+            padding-top: 0px;
+            @include flex(row, baseline, center, wrap);
+
+        }
+        @media #{$max-up} {
+            padding-left:150px;
+          justify-content: space-evenly;
+
+        }
+
+
+
+
+
+        &__link {
+            color: white;
+            font-size: $font-size-min ;
+            padding-left: 27px;
+            text-align: justify;
+            padding-bottom: 4px;
+            -webkit-transition: transform .3s;
+            -moz-transition: transform .3s;
+            -ms-transition: transform .3s;
+            -o-transition: transform .3s;
+            transition: transform .3s;
+
+            &:hover {
+
+                -webkit-transform: scale(1.1);
+                -moz-transform: scale(1.1);
+                -ms-transform: scale(1.1);
+                -o-transform: scale(1.1);
+                transform: scale(1.1);
+            }
+
+
+
+            @media #{$medium-up} {
+                padding-left: 11px;
+                text-indent: 1px;
+                font-size:14px;
+
+                &::before {
+                    content: "|";
+                    font-size: 20px;
+
+                }
+
+            }
+
+            @media #{$large-up} {
+                padding: 20px 0px 8px 19px;
+                font-size: $font-size-min;
+                padding-left: 41px;
+
+                &::before {
+                    content: "";
+
+
+                }
+                @media #{$max-up}{
+                    font-size: $font-size-med;
+                }
+
+
+
+            }
+
+
+        }
+
+        .footer-icon {
+            padding-right: 2px;
+            font-size: $font-size-min ;
+
+            @media #{$medium-up} {
+                font-size: $font-size-med;
+                padding-right: 6px;
+
+
+
+
+
+            }
+
+            @media #{$large-up} {
+                font-size: $font-size-max;
+
+            }
+
+        }
+
+
+    }
+}
