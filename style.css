@@ -152,11 +152,13 @@ button {
 @media only screen and (min-width:270px) {
   .container .icon {
     top: 178px;
+    left: 285px;
   }
 }
 @media only screen and (min-width:700px) {
   .container .icon {
     top: 227px;
+    left: 250px;
   }
 }
 @media only screen and (min-width:1000px) {
@@ -167,7 +169,7 @@ button {
 @media only screen and (min-width:1400px) {
   .container .icon {
     top: 237px;
-    left: 364px;
+    left: 265px;
   }
 }
 .container .icon--pages {
@@ -216,7 +218,6 @@ button {
   overflow: hidden;
   background-color: white;
   position: relative;
-  box-shadow: 0px 3px 12px 0px #c4c3c0;
 }
 @media only screen and (min-width:700px) {
   .restaurant__card {
@@ -706,8 +707,8 @@ button {
   flex-wrap: wrap;
 }
 .speech__title {
-  padding: 35px 74px 16px 72px;
-  font-size: 24px;
+  padding: 25px;
+  font-size: 28px;
   font-family: "roboto", sans-serif;
   font-weight: bolder;
 }
@@ -717,10 +718,9 @@ button {
   }
 }
 .speech__subtitle {
-  font-size: 16px;
+  font-size: 17px;
   font-variant: normal;
   font-family: "roboto";
-  padding: 0px 34px 0px 27px;
 }
 @media only screen and (min-width:700px) {
   .speech__subtitle {
