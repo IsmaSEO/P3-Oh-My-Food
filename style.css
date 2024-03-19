@@ -763,10 +763,10 @@ button {
 @media only screen and (min-width:1000px) {
   .working__section {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    align-items: stretch;
-    justify-content: space-around;
-    flex-wrap: nowrap;
+    align-content: stretch;
+    justify-content: space-evenly;
   }
 }
 @media only screen and (min-width:1400px) {
@@ -774,7 +774,7 @@ button {
     display: flex;
     flex-direction: row;
     align-items: stretch;
-    justify-content: space-between;
+    justify-content: flex-end;
     flex-wrap: nowrap;
   }
 }
